@@ -3,7 +3,7 @@ require("dotenv").config();          //This line simply means importing environm
 
 
 exports.dbconnect = async() => {
-    mongoose.connect(process.env.DATABASEURL1,{
+    mongoose.connect(process.env.DATABASEURL,{
        useNewUrlParser: true,
     useUnifiedTopology: true,
     }).then(() => {console.log("mongoDB connection establish")})
